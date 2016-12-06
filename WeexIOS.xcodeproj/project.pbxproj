@@ -16,6 +16,8 @@
 		3E110BA01DF6943000C11AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E110B9F1DF6943000C11AFF /* Assets.xcassets */; };
 		3E110BA31DF6943000C11AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E110BA11DF6943000C11AFF /* LaunchScreen.storyboard */; };
 		3E110BAC1DF697AB00C11AFF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E110BAB1DF697AB00C11AFF /* ThirdViewController.m */; };
+		3E110BAF1DF69D9B00C11AFF /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E110BAE1DF69D9B00C11AFF /* WXEventModule.m */; };
+		3E110BB21DF6B32C00C11AFF /* bundlejs in Resources */ = {isa = PBXBuildFile; fileRef = 3E110BB11DF6B32C00C11AFF /* bundlejs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		3E110BA41DF6943000C11AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E110BAA1DF697AB00C11AFF /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		3E110BAB1DF697AB00C11AFF /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		3E110BAD1DF69D9B00C11AFF /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
+		3E110BAE1DF69D9B00C11AFF /* WXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXEventModule.m; sourceTree = "<group>"; };
+		3E110BB11DF6B32C00C11AFF /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundlejs; sourceTree = "<group>"; };
 		DA7F4F9FFDBB2B016203E5ED /* libPods-WeexIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42A908D3BB9ADE055D44CDB /* Pods-WeexIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexIOS/Pods-WeexIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +101,8 @@
 				3E110B9A1DF6943000C11AFF /* SecondViewController.m */,
 				3E110BAA1DF697AB00C11AFF /* ThirdViewController.h */,
 				3E110BAB1DF697AB00C11AFF /* ThirdViewController.m */,
+				3E110BB11DF6B32C00C11AFF /* bundlejs */,
+				3E110BB01DF69DA300C11AFF /* Model */,
 				3E110B9C1DF6943000C11AFF /* Main.storyboard */,
 				3E110B9F1DF6943000C11AFF /* Assets.xcassets */,
 				3E110BA11DF6943000C11AFF /* LaunchScreen.storyboard */,
@@ -111,6 +118,15 @@
 				3E110B911DF6943000C11AFF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E110BB01DF69DA300C11AFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E110BAD1DF69D9B00C11AFF /* WXEventModule.h */,
+				3E110BAE1DF69D9B00C11AFF /* WXEventModule.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +192,7 @@
 				3E110BA31DF6943000C11AFF /* LaunchScreen.storyboard in Resources */,
 				3E110BA01DF6943000C11AFF /* Assets.xcassets in Resources */,
 				3E110B9E1DF6943000C11AFF /* Main.storyboard in Resources */,
+				3E110BB21DF6B32C00C11AFF /* bundlejs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +254,7 @@
 				3E110B9B1DF6943000C11AFF /* SecondViewController.m in Sources */,
 				3E110BAC1DF697AB00C11AFF /* ThirdViewController.m in Sources */,
 				3E110B951DF6943000C11AFF /* AppDelegate.m in Sources */,
+				3E110BAF1DF69D9B00C11AFF /* WXEventModule.m in Sources */,
 				3E110B981DF6943000C11AFF /* FirstViewController.m in Sources */,
 				3E110B921DF6943000C11AFF /* main.m in Sources */,
 			);
@@ -391,6 +409,7 @@
 				3E110BA91DF6943000C11AFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

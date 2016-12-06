@@ -117,29 +117,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="thrid View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bKe-nL-4Fg">
-                                <rect key="frame" x="195" y="279" width="209.5" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruR-GX-EnW">
-                                <rect key="frame" x="192" y="329" width="215.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kqG-HO-Hkz">
+                                <rect key="frame" x="10" y="20" width="580" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lve-NU-8EV"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="参与记录"/>
+                                    <segment title="抢中记录"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.72941176470000002" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="bKe-nL-4Fg" secondAttribute="centerX" id="3dI-Jb-PlJ"/>
-                            <constraint firstAttribute="centerY" secondItem="bKe-nL-4Fg" secondAttribute="centerY" id="Yu9-Wu-Xtc"/>
-                            <constraint firstItem="ruR-GX-EnW" firstAttribute="centerX" secondItem="bKe-nL-4Fg" secondAttribute="centerX" id="gx7-jG-3G6"/>
-                            <constraint firstItem="ruR-GX-EnW" firstAttribute="top" secondItem="bKe-nL-4Fg" secondAttribute="bottom" constant="8" symbolic="YES" id="ydr-xX-s19"/>
+                            <constraint firstItem="kqG-HO-Hkz" firstAttribute="top" secondItem="UGu-gf-6Pv" secondAttribute="top" constant="20" id="7ch-UI-hqq"/>
+                            <constraint firstAttribute="trailing" secondItem="kqG-HO-Hkz" secondAttribute="trailing" constant="10" id="Byb-Wf-P2i"/>
+                            <constraint firstItem="kqG-HO-Hkz" firstAttribute="leading" secondItem="UGu-gf-6Pv" secondAttribute="leading" constant="10" id="uUN-nO-8yn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="我的" image="first" id="1oq-pJ-OFd"/>
+                    <connections>
+                        <outlet property="segment" destination="kqG-HO-Hkz" id="Dld-BP-lNc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hp-5L-yfS" sceneMemberID="firstResponder"/>
             </objects>

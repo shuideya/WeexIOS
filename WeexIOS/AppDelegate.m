@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <WeexSDK/WeexSDK.h>
+#import "WXEventModule.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [WXAppConfiguration setAppGroup:@"jwDemo"];
+    [WXAppConfiguration setAppName:@"weexPageDemo"];
+    [WXAppConfiguration setAppVersion:@"1.0.0"];
+    
+    //init sdk enviroment
+    [WXSDKEngine initSDKEnviroment];
+    
+    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
+    
+    //set the log level
+    [WXLog setLogLevel: WXLogLevelAll];
+    
     return YES;
 }
 
