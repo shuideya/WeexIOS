@@ -2,18 +2,24 @@ PODS:
   - SocketRocket (0.5.1)
   - WeexSDK (0.6.0):
     - SocketRocket
+  - WXDevtool (0.0.1):
+    - WeexSDK
 
 DEPENDENCIES:
   - WeexSDK (from `./sdk/`)
+  - WXDevtool (from `./WXDevtool/`)
 
 EXTERNAL SOURCES:
   WeexSDK:
     :path: "./sdk/"
+  WXDevtool:
+    :path: "./WXDevtool/"
 
 SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   WeexSDK: 3ce441ea90c93462f1f8e7744cb0b63081744de9
+  WXDevtool: dc48ee7771740735fcb93fa8359162d83fe749b8
 
-PODFILE CHECKSUM: f72b80c03d2f42b45a4b949eeab21da999636545
+PODFILE CHECKSUM: 4ff824b822e583e836244369696d25e8f3f3113e
 
 COCOAPODS: 1.2.0.beta.1

@@ -20,6 +20,11 @@ This application makes use of the following third party libraries:
 
 
 
+## WXDevtool
+
+Alibaba-INC copyright
+
+
 ## WeexSDK
 
 Alibaba-INC copyright
